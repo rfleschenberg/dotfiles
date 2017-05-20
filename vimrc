@@ -2,7 +2,6 @@ syntax on
 filetype plugin indent on
 
 set bg=dark
-colorscheme onedark
 
 set shiftwidth=4 softtabstop=4 tabstop=4 expandtab
 set textwidth=79
