@@ -44,4 +44,3 @@ let mapleader = "\<Space>"
 
 "local_vimrc
 let g:local_vimrc = '.vimrc'
-
