@@ -1,0 +1,14 @@
+[user]
+    name = René Fleschenberg
+    email = rene@fleschenberg.net
+[push]
+    default = simple
+[core]
+    excludesfile = /home/rene/.gitignore_global
+[alias]
+    st = status -u
+    ci = commit
+    br = branch
+    co = checkout
+    di = diff
+    cdi = diff --cached
