@@ -20,3 +20,8 @@ cd Python
 ./configure
 make && sudo make install
 ```
+
+## Installing the dotfiles
+```
+./install.sh
+```
