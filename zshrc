@@ -70,3 +70,5 @@ if [ -f /usr/local/bin/nvim ]
 then
     export EDITOR=/usr/local/bin/nvim
 fi
+
+PROMPT="%n@%m %1~ %# "
