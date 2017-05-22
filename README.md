@@ -25,3 +25,8 @@ make && sudo make install
 ```
 ./install.sh
 ```
+
+In nvim:
+```
+:PlugInstall
+```
