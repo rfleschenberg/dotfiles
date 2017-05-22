@@ -1,8 +1,12 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'mhartington/oceanic-next'
 Plug 'vimjas/vim-python-pep8-indent'
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-jedi'
 call plug#end()
 
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"
 syntax on
 filetype plugin indent on
 
@@ -47,3 +51,8 @@ noremap vv <ESC>:w<return>
 let mapleader = "\<Space>"
 
 let g:local_vimrc = '.vimrc'
+
+let g:python_host_prog = '/home/rene/local/bin/python2'
+let g:python3_host_prog = '/home/rene/local/bin/python3'
+
+let g:deoplete#enable_at_startup = 1
