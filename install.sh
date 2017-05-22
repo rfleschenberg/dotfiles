@@ -5,7 +5,7 @@ set -e
 dotfiles="$(dirname $(readlink -f $0))"
 
 mkdir -p ~/.config/nvim 2>/dev/null || true
-ln -bnfs "$dotfiles/vimrc" ~/.config/nvim/init.vim
+ln -bnfs "$dotfiles/init.vim" ~/.config/nvim/init.vim
 mkdir -p ~/.local/share/nvim/site/autoload/ 2>/dev/null || true
 ln -bnfs "$dotfiles/plug.vim" ~/.local/share/nvim/site/autoload/plug.vim
 
