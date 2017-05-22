@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'mhartington/oceanic-next'
+Plug 'vimjas/vim-python-pep8-indent'
 call plug#end()
 
 syntax on
