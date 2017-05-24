@@ -60,3 +60,4 @@ let g:deoplete#enable_at_startup = 1
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR>
+nnoremap <Leader># :b#<CR>
