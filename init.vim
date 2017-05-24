@@ -4,6 +4,7 @@ Plug 'vimjas/vim-python-pep8-indent'
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -57,3 +58,7 @@ let g:python_host_prog = '/home/rene/local/bin/python2'
 let g:python3_host_prog = '/home/rene/local/bin/python3'
 
 let g:deoplete#enable_at_startup = 1
+
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>b :CtrlPBuffer<CR>
+nnoremap <Leader>f :CtrlPMRUFiles<CR>
