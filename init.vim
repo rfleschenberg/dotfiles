@@ -3,6 +3,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'vimjas/vim-python-pep8-indent'
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-jedi'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
