@@ -2,13 +2,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'mhartington/oceanic-next'
 Plug 'vimjas/vim-python-pep8-indent'
 Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-jedi'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"
 syntax on
 filetype plugin indent on
 
