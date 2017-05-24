@@ -30,7 +30,6 @@ set incsearch
 set autowrite
 set nohlsearch
 set completeopt-=preview
-set statusline=%n:\ %f\ %m%r\ %h\ %y\ %c
 set laststatus=2
 set wildmenu
 set visualbell t_vb=
