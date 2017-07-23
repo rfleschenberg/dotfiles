@@ -71,4 +71,34 @@ then
     export EDITOR=/usr/local/bin/nvim
 fi
 
-PROMPT="%n@%m %1~ %# "
+
+
+setopt prompt_subst
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' actionformats \
+    '%F{5}[%F{2}%b%F{5}] (%a) %f '
+zstyle ':vcs_info:*' formats       \
+    '%F{5}[%F{2}%b%F{5}]%f '
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+
+zstyle ':vcs_info:*' enable git
+
+
+# or use pre_cmd, see man zshcontrib
+vcs_info_wrapper() {
+  vcs_info
+  if [ -n "$vcs_info_msg_0_" ]; then
+    echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  fi
+}
+
+
+PROMPT="%n@%m %1~ %# "$'$(vcs_info_wrapper)'
+
+_direnv_hook() {
+  eval "$(direnv export zsh)";
+}
+typeset -ag precmd_functions
+if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
+  precmd_functions+=_direnv_hook;
+fi
