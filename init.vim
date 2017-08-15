@@ -43,6 +43,9 @@ autocmd Filetype yaml setlocal ts=2 sw=2 tw=0
 " Prevent some backspace problems
 set backspace=indent,eol,start
 
+" https://github.com/neovim/neovim/issues/6798
+set guicursor=
+
 highlight ExtraWhiteSpace ctermbg=red guibg=red
 match ExtraWhiteSpace /\s\+$/
 
