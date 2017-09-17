@@ -2,7 +2,7 @@
     name = René Fleschenberg
     email = rene@fleschenberg.net
 [push]
-    default = simple
+	default = current
 [core]
     excludesfile = /home/rene/.gitignore_global
 [alias]
