@@ -108,3 +108,10 @@ typeset -ag precmd_functions
 if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
   precmd_functions+=_direnv_hook;
 fi
+
+if [ -e /home/rene/.pyenv ]
+then
+    export PATH="/home/rene/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
