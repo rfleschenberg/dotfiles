@@ -1,3 +1,11 @@
+# It is not necessary, and potentially harmful, to run this in each subshell.
+# So we exit if we are not in a login shell. If you need to run anything for
+# non-login shells, move it above.
+if [[ ! -o login ]]
+then
+    exit 0
+fi
+
 setopt pushd_ignore_dups
 
 HISTFILE=~/.histfile
@@ -28,20 +36,17 @@ alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 
-if [[ -o login ]]
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]
 then
-    if [ -f /usr/local/bin/virtualenvwrapper.sh ]
-    then
-        source /usr/local/bin/virtualenvwrapper.sh
-    elif [ -f /usr/bin/virtualenvwrapper.sh ]
-    then
-        source /usr/bin/virtualenvwrapper.sh
-    elif [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]
-    then
-        source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
-    fi
-    export WORKON_HOME=~/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [ -f /usr/bin/virtualenvwrapper.sh ]
+then
+    source /usr/bin/virtualenvwrapper.sh
+elif [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]
+then
+    source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 fi
+export WORKON_HOME=~/.virtualenvs
 
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/heroku/bin
 export PATH=$PATH:~/local/bin
