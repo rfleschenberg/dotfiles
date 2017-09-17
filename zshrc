@@ -28,17 +28,20 @@ alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]
+if [[ -o login ]]
 then
-	source /usr/local/bin/virtualenvwrapper.sh
-elif [ -f /usr/bin/virtualenvwrapper.sh ]
-then
-	source /usr/bin/virtualenvwrapper.sh
-elif [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]
-then
-	source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+    if [ -f /usr/local/bin/virtualenvwrapper.sh ]
+    then
+        source /usr/local/bin/virtualenvwrapper.sh
+    elif [ -f /usr/bin/virtualenvwrapper.sh ]
+    then
+        source /usr/bin/virtualenvwrapper.sh
+    elif [ -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]
+    then
+        source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+    fi
+    export WORKON_HOME=~/.virtualenvs
 fi
-export WORKON_HOME=~/.virtualenvs
 
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/heroku/bin
 export PATH=$PATH:~/local/bin
@@ -94,6 +97,9 @@ vcs_info_wrapper() {
 
 
 PROMPT="%n@%m %1~ %# "$'$(vcs_info_wrapper)'
+if [[ -n "$VIRTUAL_ENV" ]]; then
+    PS1="($(basename "$VIRTUAL_ENV")) $PS1"
+fi
 
 _direnv_hook() {
   eval "$(direnv export zsh)";
