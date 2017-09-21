@@ -53,7 +53,13 @@ sudo make install
 Now we install the dotfiles:
 
 ```
+git clone git@github.com:rfleschenberg/dotfiles.git
+cd dotfiles
+git submodule update --init --recursive
 ./install.sh
+# ZSH only
+source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
+setupsolarized dircolors.ansi-dark
 ```
 
 

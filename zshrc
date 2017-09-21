@@ -115,3 +115,5 @@ then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
