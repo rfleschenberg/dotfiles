@@ -110,11 +110,11 @@ if [[ -z $precmd_functions[(r)_direnv_hook] ]]; then
   precmd_functions+=_direnv_hook;
 fi
 
-if [ -e /home/rene/.pyenv ]
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if [ -e "$HOME/.pyenv" ]
 then
-    export PATH="/home/rene/.pyenv/bin:$PATH"
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
 fi
 
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
