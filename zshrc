@@ -54,6 +54,7 @@ fi
 
 export HGENCODING="utf-8"
 export PYTHONSTARTUP=~/.pystartup
+export PYTHONDONTWRITEBYTECODE=1
 export ANSIBLE_NOCOWS=1
 export LANG="de_DE.UTF-8"
 export LC_MESSAGES="C"
