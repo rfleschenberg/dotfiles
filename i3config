@@ -38,6 +38,8 @@ set $down j
 set $left h
 set $right l
 
+focus_follows_mouse no
+
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
