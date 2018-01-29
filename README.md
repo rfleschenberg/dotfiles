@@ -1,41 +1,21 @@
-# Installation (Debian Jessie)
-
-We build custom Pythons (both Python 2 and Python 3) and install them to
-`~/local`. Maybe it would be better to use pyenv, but so far, this approach
-seems to work ok.
+# Installation (Debian Stretch)
 
 ```
-sudo apt-get build-dep python
-sudo apt-get install libreadline-dev
-cd /tmp
-wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tar.xz
-tar -xvf Python-2.7.13.tar.xz
-cd Python-2.7.13
-./configure --prefix ~/local
-make && make install
-wget https://bootstrap.pypa.io/get-pip.py
-~/local/bin/python2 get-pip.py
-cd /tmp
-wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
-tar -xvf Python-3.6.1.tar.xz
-cd Python-3.6.1
-./configure --prefix ~/local
-make && make install
-```
-
-Note that when the paths to these Python installations change, we must update
-these lines in `init.vim`:
-
-```
-let g:python_host_prog = '/home/rene/local/bin/python2'
-let g:python3_host_prog = '/home/rene/local/bin/python3'
+sudo apt install -y make build-essential libssl libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+sudo apt install -y git i3 direnv konsole keychain xclip
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+pyenv init
+pyenv install 3.6.4
+pyenv install 2.7.12
 ```
 
 Next, install the Neovim Python bridge and other required packages:
 
 ```
-~/local/bin/pip2 install neovim jedi yapf
-~/local/bin/pip3 install neovim jedi yapf
+~/.pyenv/versions/3.6.4/bin/pip3 install neovim jedi yapf
+~/.pyenv/versions/2.7.12/bin/pip install neovim jedi yapf
 ```
 
 Build and install Neovim:
@@ -45,7 +25,6 @@ cd /tmp
 sudo apt-get install libtool libtool-bin autoconf automake cmake g++ pkg-config unzip
 git clone git@github.com:neovim/neovim.git
 cd neovim
-rm -rf build
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
