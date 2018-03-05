@@ -5,6 +5,7 @@
 	default = current
 [core]
     excludesfile = /home/rene/.gitignore_global
+
 [alias]
     st = status -u
     ci = commit
@@ -13,5 +14,6 @@
     di = diff
     cdi = diff --cached
     clb = !git branch --merged | egrep -v \"(^\\*|^  master)\" | xargs git branch -d
+
 [credential]
     helper = cache --timeout 86400
