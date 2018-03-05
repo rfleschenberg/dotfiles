@@ -12,3 +12,5 @@
     co = checkout
     di = diff
     cdi = diff --cached
+[credential]
+	helper = cache --timeout 86400
