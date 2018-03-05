@@ -6,6 +6,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-surround'
+Plug 'chr4/nginx.vim'
 call plug#end()
 
 syntax on
@@ -55,8 +57,8 @@ let mapleader = "\<Space>"
 
 let g:local_vimrc = '.vimrc'
 
-let g:python_host_prog = '/home/rene/local/bin/python2'
-let g:python3_host_prog = '/home/rene/local/bin/python3'
+let g:python_host_prog = '/home/rene/.pyenv/versions/2.7.12/bin/python'
+let g:python3_host_prog = '/home/rene/.pyenv/versions/3.6.4/bin/python'
 
 let g:deoplete#enable_at_startup = 1
 
