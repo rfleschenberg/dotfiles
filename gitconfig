@@ -14,4 +14,4 @@
     cdi = diff --cached
     clb = !git branch --merged | egrep -v \"(^\\*|^  master)\" | xargs git branch -d
 [credential]
-	helper = cache --timeout 86400
+    helper = cache --timeout 86400
