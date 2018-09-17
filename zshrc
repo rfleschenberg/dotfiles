@@ -119,4 +119,4 @@ fi
 
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
 
-setxkbmap -layout de -variant nodeadkeys -option compose:menu
+setxkbmap -layout us -variant nodeadkeys -option compose:menu
