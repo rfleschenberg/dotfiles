@@ -1,3 +1,5 @@
+# vim: set syntax=zsh:
+
 setopt pushd_ignore_dups
 
 
