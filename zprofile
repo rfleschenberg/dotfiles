@@ -31,15 +31,14 @@ export WORKON_HOME=~/.virtualenvs
 
 
 
-HOSTNAME=$(uname -n)
 keychain ~/.ssh/id_rsa
-if [ -e ~/.keychain/$HOSTNAME-sh ]
+if [ -e ~/.keychain/$HOST-sh ]
 then
-    . ~/.keychain/$HOSTNAME-sh
+    . ~/.keychain/$HOST-sh
 fi
-if [ -e ~/.keychain/$HOSTNAME-gpg ]
+if [ -e ~/.keychain/$HOST-gpg ]
 then
-    . ~/.keychain/$HOSTNAME-sh-gpg
+    . ~/.keychain/$HOST-sh-gpg
 fi
 
 
