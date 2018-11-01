@@ -5,6 +5,7 @@
 	default = current
 [core]
     excludesfile = /home/rene/.gitignore_global
+
 [alias]
     st = status -u
     ci = commit
