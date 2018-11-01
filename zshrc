@@ -45,6 +45,7 @@ fi
 
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/heroku/bin
 export PATH=$PATH:~/local/bin:~/.local/bin
+export PATH=$PATH:~/.poetry/bin
 
 # ~/local/bin must be in PATH for this to work.
 if [ -x ~/local/bin/direnv ]
