@@ -11,14 +11,9 @@ if [ -f /usr/local/bin/nvim ]
 then
     export EDITOR=/usr/local/bin/nvim
 fi
-
-
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/heroku/bin
 export PATH=$PATH:~/local/bin:~/.local/bin
 export PATH=$PATH:~/.poetry/bin
-
-
-
 
 
 keychain ~/.ssh/id_rsa
@@ -45,6 +40,3 @@ export NVM_DIR="$HOME/.nvm"
 
 
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
-
-
-setxkbmap -layout us -option compose:rwin

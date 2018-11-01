@@ -15,6 +15,7 @@ ln -bnfs "$dotfiles/zprofile" ~/.zprofile
 ln -bnfs "$dotfiles/gitignore_global" ~/.gitignore_global
 ln -bnfs "$dotfiles/gitconfig" ~/.gitconfig
 
+ln -bnfs "$dotfiles/xinitrc" ~/.xinitrc
 
 mkdir ~/.i3 2>/dev/null || true
 ln -bnfs "$dotfiles/i3config" ~/.i3/config
