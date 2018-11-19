@@ -7,14 +7,14 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 pyenv init
-pyenv install 3.6.4
+pyenv install 3.6.7
 pyenv install 2.7.12
 ```
 
 Next, install the Neovim Python bridge and other required packages:
 
 ```
-~/.pyenv/versions/3.6.4/bin/pip3 install neovim jedi yapf
+~/.pyenv/versions/3.6.7/bin/pip3 install neovim jedi yapf
 ~/.pyenv/versions/2.7.12/bin/pip install neovim jedi yapf
 ```
 
