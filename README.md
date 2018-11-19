@@ -1,7 +1,7 @@
 # Installation (Debian Stretch)
 
 ```
-sudo apt install -y make build-essential libssl libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
+sudo apt install -y make build-essential libssl1.0.2 libssl1.1 libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev
 sudo apt install -y git i3 direnv konsole keychain xclip
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 export PYENV_ROOT="$HOME/.pyenv"
