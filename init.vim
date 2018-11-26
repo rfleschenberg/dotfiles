@@ -59,7 +59,7 @@ let mapleader = "\<Space>"
 let g:local_vimrc = '.vimrc'
 
 let g:python_host_prog = '/home/rene/.pyenv/versions/2.7.12/bin/python'
-let g:python3_host_prog = '/home/rene/.pyenv/versions/3.6.4/bin/python'
+let g:python3_host_prog = '/home/rene/.pyenv/versions/3.6.7/bin/python'
 
 let g:deoplete#enable_at_startup = 1
 
