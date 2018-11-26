@@ -8,6 +8,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'chr4/nginx.vim'
+Plug 'kchmck/vim-coffee-script'
 call plug#end()
 
 syntax on
