@@ -2,7 +2,7 @@
     name = René Fleschenberg
     email = rene@fleschenberg.net
 [push]
-	default = current
+    default = current
 [core]
     excludesfile = /home/rene/.gitignore_global
 
@@ -15,4 +15,9 @@
     cdi = diff --cached
     clb = !git branch --merged | egrep -v \"(^\\*|^  master)\" | xargs git branch -d
 [credential]
-	helper = store
+    helper = store
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
