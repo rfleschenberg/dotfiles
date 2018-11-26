@@ -40,3 +40,5 @@ export NVM_DIR="$HOME/.nvm"
 
 
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
+
+export PATH="$HOME/.poetry/bin:$PATH"
