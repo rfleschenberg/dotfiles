@@ -3,6 +3,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'vimjas/vim-python-pep8-indent'
 Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -58,8 +59,7 @@ let mapleader = "\<Space>"
 
 let g:local_vimrc = '.vimrc'
 
-let g:python_host_prog = '/home/rene/.pyenv/versions/2.7.12/bin/python'
-let g:python3_host_prog = '/home/rene/.pyenv/versions/3.6.7/bin/python'
+let g:python3_host_prog = '/home/rene/.virtualenvs/nvim/bin/python'
 
 let g:deoplete#enable_at_startup = 1
 
