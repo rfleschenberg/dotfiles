@@ -18,7 +18,7 @@ export PATH=$PATH:~/.poetry/bin
 
 if [[ -o interactive ]]
 then
-    keychain ~/.ssh/id_rsa
+    keychain -q ~/.ssh/id_rsa
 fi
 if [ -e ~/.keychain/$HOST-sh ]
 then
