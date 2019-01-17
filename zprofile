@@ -16,7 +16,10 @@ export PATH=$PATH:~/local/bin:~/.local/bin
 export PATH=$PATH:~/.poetry/bin
 
 
-keychain ~/.ssh/id_rsa
+if [[ -o interactive ]]
+then
+    keychain ~/.ssh/id_rsa
+fi
 if [ -e ~/.keychain/$HOST-sh ]
 then
     . ~/.keychain/$HOST-sh
