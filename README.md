@@ -16,6 +16,8 @@ Next, install the Neovim Python bridge and other required packages:
 ```
 python3.7 -m venv ~/.virtualenvs/nvim
 ~/.virtualenvs/nvim/bin/pip install neovim jedi yapf pynvim
+PYENV_VERSION=2.7.12 virtualenv ~/.virtualenvs/nvim-py2
+~/.virtualenvs/nvim-py2/bin/pip install neovim jedi yapf pynvim
 ```
 
 Build and install Neovim:
