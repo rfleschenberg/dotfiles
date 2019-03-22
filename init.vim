@@ -63,6 +63,7 @@ let g:python2_host_prog = '/home/rene/.virtualenvs/nvim-py2/bin/python'
 let g:python3_host_prog = '/home/rene/.virtualenvs/nvim/bin/python'
 
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('auto_complete_delay', 20)
 
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
