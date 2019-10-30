@@ -10,6 +10,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
 Plug 'chr4/nginx.vim'
 Plug 'kchmck/vim-coffee-script'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 syntax on
