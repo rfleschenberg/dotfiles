@@ -8,9 +8,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'chr4/nginx.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'hashivim/vim-terraform'
+Plug 'tmhedberg/SimpylFold'
 call plug#end()
 
 syntax on
@@ -40,6 +42,8 @@ set laststatus=2
 set wildmenu
 set visualbell t_vb=
 set nostartofline
+" Do not fold by default
+set foldlevel=99
 
 autocmd Filetype html setlocal ts=2 sw=2 tw=0
 autocmd Filetype htmldjango setlocal ts=2 sw=2 tw=0
