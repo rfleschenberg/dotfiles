@@ -45,3 +45,6 @@ export NVM_DIR="$HOME/.nvm"
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+export QT_IM_MODULE="xim"
+export GTK_IM_MODULE="xim"
