@@ -63,10 +63,9 @@ alias la="ls -a"
 alias lla="ls -la"
 #
 #
-# ~/local/bin must be in PATH for this to work.
-if [ -x ~/local/bin/direnv ]
+if type direnv > /dev/null
 then
-    eval "$(~/local/bin/direnv hook zsh)"
+    eval "$(direnv hook zsh)"
 fi
 
 
