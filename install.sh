@@ -22,3 +22,5 @@ ln -bnfs "$dotfiles/i3config" ~/.i3/config
 ln -bnfs "$dotfiles/i3status.conf" ~/.i3status.conf
 
 ln -bnfs "$dotfiles/pystartup" ~/.pystartup
+
+ln -bnfs "$dotfiles/xprofile" ~/.xprofile

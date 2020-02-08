@@ -31,10 +31,6 @@ font pango:DejaVu Sans Mono 10
 # set $left j
 # set $right semicolon
 
-exec_always "export QT_IM_MODULE='xim'"
-exec_always "export GTK_IM_MODULE='xim'"
-exec_always "setxkbmap -option compose:rctrl"
-
 set $mod Mod4
 
 set $up k
