@@ -1,6 +1,7 @@
 # vim: set syntax=zsh:
 
 export HGENCODING="utf-8"
+export EDITOR="nvim"
 export PYTHONSTARTUP=~/.pystartup
 export PYTHONDONTWRITEBYTECODE=1
 export ANSIBLE_NOCOWS=1
