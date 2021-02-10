@@ -1,7 +1,7 @@
 # Installation (Debian Buster)
 
 ```
-sudo apt install -y make build-essential libssl1.1 libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev git i3 direnv konsole keychain xclip neovim neovim-qt python3-neovim zsh network-manager
+sudo apt install -y make build-essential libssl1.1 libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev git i3 direnv konsole keychain xclip neovim neovim-qt python-neovim python3-neovim zsh network-manager
 chsh -s /bin/zsh
 ```
 
