@@ -13,6 +13,7 @@ Plug 'chr4/nginx.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'hashivim/vim-terraform'
 Plug 'tmhedberg/SimpylFold'
+Plug 'psf/black', { 'branch': 'stable' }
 call plug#end()
 
 syntax on
@@ -66,6 +67,9 @@ let g:local_vimrc = '.vimrc'
 
 let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option('auto_complete_delay', 20)
+
+let g:black_quiet = 1
+autocmd BufWritePre *.py execute ':Black'
 
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
