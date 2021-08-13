@@ -33,6 +33,7 @@ fi
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.pyenv/shims:${PATH}"
 if [ -e "$HOME/.pyenv" ]
 then
     eval "$(pyenv init -)"
