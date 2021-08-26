@@ -75,4 +75,7 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>b :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlPMRUFiles<CR>
 nnoremap <Leader># :b#<CR>
-nnoremap <Leader>p Oimport pdb; pdb.set_trace()<ESC>
+
+nnoremap <Leader>p O__import__("pdb").set_trace()  # FIXME<ESC>
+
+
