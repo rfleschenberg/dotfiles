@@ -9,6 +9,7 @@
 .~*
 .test.env
 .prod.env
+.envrc
 
 .hg
 .hgignore

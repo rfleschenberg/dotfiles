@@ -14,7 +14,7 @@ then
 fi
 export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/heroku/bin
 export PATH=$PATH:~/local/bin:~/.local/bin
-export PATH=$PATH:~/.poetry/bin
+export PATH=$PATH:~/.local/bin/poetry
 
 
 if [[ -o interactive ]]
@@ -45,8 +45,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
-
-export PATH="$HOME/.poetry/bin:$PATH"
 
 export QT_IM_MODULE="xim"
 export GTK_IM_MODULE="xim"
