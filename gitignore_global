@@ -12,3 +12,5 @@
 
 .hg
 .hgignore
+
+venv/
