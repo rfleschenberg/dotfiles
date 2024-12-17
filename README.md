@@ -15,12 +15,11 @@ source ~/dotfiles/zsh-dircolors-solarized/zsh-dircolors-solarized.zsh
 setupsolarized dircolors.ansi-dark
 ```
 
-Launch `nvim` and install the Neovim plugins:
-```
-:PlugInstall
-```
-
 Finally, clean up:
 ```
 sudo apt-get autoremove
 ```
+
+## nvim
+
+https://github.com/rfleschenberg/kickstart.nvim?tab=readme-ov-file#installation
